@@ -1,7 +1,8 @@
 [[local|localrc]]
 #enable_plugin networking-odl https://github.com/stackforge/networking-odl
 #enable_plugin networking-odl /vagrant/x/networking-odl.git plugin
-enable_plugin networking-odl https://github.com/flavio-fernandes/networking-odl lithiumkilo
+#enable_plugin networking-odl https://github.com/flavio-fernandes/networking-odl lithiumkilo
+enable_plugin networking-odl https://github.com/openstack/networking-odl stable/liberty
 
 LOGFILE=stack.sh.log
 SCREEN_LOGDIR=/opt/stack/data/log
@@ -69,7 +70,8 @@ SERVICE_TOKEN=service
 SERVICE_PASSWORD=admin
 ADMIN_PASSWORD=admin
 
-BRANCH=stable/kilo
+#BRANCH=stable/kilo
+BRANCH=stable/liberty
 GLANCE_BRANCH=$BRANCH
 HORIZON_BRANCH=$BRANCH
 KEYSTONE_BRANCH=$BRANCH
